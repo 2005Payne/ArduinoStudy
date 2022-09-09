@@ -36,7 +36,6 @@ delay(); //딜레이를 주는 함수(1초 == 1000)
 시리얼 통신 읽어오기
 ```
 import serial
-import tiem
 ser=serial.Serial("COM6",9600)
 
 while True:
