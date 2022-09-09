@@ -56,5 +56,28 @@ void loop() {
 ```
 
 https://user-images.githubusercontent.com/88232976/189147589-cbeeff4a-4a44-44df-9ce3-879b66c3e255.mp4
+## 시리얼 통신을 이용하여 서보모터 조작
+```
+#include <Servo.h>
+Servo servo;
+int servoPin=3;
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  if(Serial.available()){
+    String a=Serial.readString();
+    Serial.println("a:"+a);
+    int b=a.toInt();
+    servo.attach(servoPin);
+    servo.write(b);
+  }
+  delay(1000);
+  servo.detach();
+}
+```
+
+https://user-images.githubusercontent.com/88232976/189273480-b40a157e-1c2d-4c42-9927-bc3aa808dfb4.mp4
 
 
