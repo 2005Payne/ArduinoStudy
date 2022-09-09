@@ -33,12 +33,15 @@ Servo.detach()
 delay(); //딜레이를 주는 함수(1초 == 1000)
 ```
 ## 파이썬 시리얼통신
+시리얼 통신 읽어오기
 ```
 import serial
+import tiem
 ser=serial.Serial("COM6",9600)
 
 while True:
-    a=ser.readline() 
+    a=str(ser.readline())
+    a=a[2:].strip("\\r\\n\'")
     print(a)
 ```
 # 아두이노 연습용 프로젝트
