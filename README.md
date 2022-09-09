@@ -32,7 +32,15 @@ Servo.detach()
 ```
 delay(); //딜레이를 주는 함수(1초 == 1000)
 ```
-   
+## 파이썬 시리얼통신
+```
+import serial
+ser=serial.Serial("COM6",9600)
+
+while True:
+    a=ser.readline() 
+    print(a)
+```
 # 아두이노 연습용 프로젝트
 아두이노를 가지고 놀며 만들어진 작은 프로젝트입니다.
 ## 밝기를 서보모터로 표시해주는 기계
