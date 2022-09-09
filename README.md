@@ -20,7 +20,8 @@ digitalRead()
 ## 서보모터(Servo)
 ```
 #include <Servo.h> //서보모터를 쓰기위해 함수들을 담은 Servo.h 파일을 불러옴   
-servo.write(핀번호) //서보모터를 움직이는 함수
+Servo.write(핀번호) //서보모터를 움직이는 함수
+Servo.detach() //서보모터 해제
 ```
    
 ## 그 외
