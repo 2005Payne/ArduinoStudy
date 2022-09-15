@@ -10,7 +10,8 @@ Serial.readString()
 ```
 ## 아날로그(analog)
 ```
-analogRead() //아날로그 핀을 읽음   
+analogRead() //아날로그 핀을 읽음
+analogWrite() 
 ```
    
 ## 디지털(digital)
