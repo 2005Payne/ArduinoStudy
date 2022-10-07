@@ -91,9 +91,18 @@ void loop() {
 
 https://user-images.githubusercontent.com/88232976/189273480-b40a157e-1c2d-4c42-9927-bc3aa808dfb4.mp4
 
-## 아두이노 DHT11 센서
+## 아두이노 수분센서
+물에 닿으면 값이 500이상으로 바뀜
+```
+void setup() {
+  Serial.begin(9600);
+
+}
+
+void loop() {
+  Serial.println(analogRead(A0));
+  delay(1000);
+}
 ```
 
-```
-
-
+https://user-images.githubusercontent.com/88232976/194458376-907e9b55-7370-4b0e-bb39-b23da60b912c.mp4
